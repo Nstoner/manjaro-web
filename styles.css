@@ -355,8 +355,14 @@ section .third h1 {
     color: #00897B;
 }
 
-section .third span {
+section .third h1 span {
     color: yellow;
+}
+
+section .third h2 span {
+    font-size: large;
+    font-weight: 500;
+    color: #fff;
 }
 
 section .third p {
@@ -374,6 +380,8 @@ section .third .box-container .box {
     background: #fff;
     width: 350px;
     height: 600px;
+    border-radius: 10px;
+    box-shadow: inset;
 }
 
 section .third .box-container .box .imgone,.imgtwo,.imgthree {
@@ -398,7 +406,14 @@ section .third .box-container .box h3 {
 }
 
 section .third .box-container .box p {
+    color: #263238;
+    font-weight: 300;
     margin-bottom: 30px;
+}
+
+section .third .box-container .box a {
+    color: #A799D2;
+    text-decoration: none;
 }
 
 
@@ -406,7 +421,65 @@ section .third .box-container .box p {
 /* Section > third div End */
 
 
+/* Footer Start */
 
+footer {
+    max-width: 100vw;
+    background: #1DE9B6;
+    
+}
+
+footer .line {
+    width: 1000px;
+    height: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+footer .footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+}
+
+footer .footer .left {
+    width: 390px;
+    margin-bottom: 40px;
+}
+
+footer .footer .left img {
+    width: 150px;
+    margin:20px auto;
+}
+
+footer .footer .left p {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+footer .footer .right {
+    width: 590px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    
+}
+
+footer .footer .right .ulcontainer {
+    display: flex;
+}
+
+footer .footer .right ul {
+    list-style: none;
+}
+
+footer .footer .right ul li {
+    
+}
+
+footer .footer .right ul li a {
+    text-decoration: none;
+}
 
 
 
@@ -479,10 +552,33 @@ section .third .box-container .box p {
         width: 550px;
     }
 
+    footer .footer {
+        justify-content: flex-start;
+    }
+
+    footer .footer .left {
+        width: 400px;
+        justify-content: flex-start;
+    }
+
+    footer .footer .right {
+        width: 1000px;
+        display: flex;
+        justify-content: space-around;
+    }
+
     
 }
 
 @media (max-width:550px) {
+
+    body {
+        background-image: url(img/fixed-bg-640.f0281a3528b6.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        scroll-behavior: smooth;
+    }
+
     .hidenavbar {
         display: flex;
         justify-content: space-between;
@@ -491,6 +587,14 @@ section .third .box-container .box p {
 
 
 @media (max-width:375px) {
+
+    body {
+        background-image: url(img/fixed-bg-640.f0281a3528b6.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        scroll-behavior: smooth;
+    }
+
     section .right .check-link {
         margin: 0 auto;
         min-width: 350px;
