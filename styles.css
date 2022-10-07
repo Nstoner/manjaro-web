@@ -471,14 +471,22 @@ footer .footer .right .ulcontainer {
 
 footer .footer .right ul {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
 }
 
 footer .footer .right ul li {
-    
+
 }
 
 footer .footer .right ul li a {
     text-decoration: none;
+    color: #263238;
+}
+
+footer .btn {
+    width: 100px;
 }
 
 
@@ -582,6 +590,14 @@ footer .footer .right ul li a {
     .hidenavbar {
         display: flex;
         justify-content: space-between;
+    }
+
+    footer .btn {
+        width: 100px;
+    }
+
+    footer .btn a {
+        width: fit-content;
     }
 }
 
